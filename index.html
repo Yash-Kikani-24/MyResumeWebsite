@@ -1,50 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Yash Kikani</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 </head>
 
-<body class="overflow-hidden">
+<body class="overflow-x-hidden">
+    <!-- PAGE1 -->
+    <div class="bg-[#E0E0E0] coloranimation h-screen w-screen p-5 overflow-hidden relative">
 
-    <div class="bg-[#E0E0E0] coloranimation h-screen w-screen p-5 overflow-hidden">
+        <div class="image-wrapper absolute inset-0">
+            <div class="imageanimation absolute inset-0 bg-[url('MyPicBG.png')] bg-no-repeat bg-center bg-contain">
+            </div>
+        </div>
 
-        <div class="imageanimation absolute inset-0 bg-[url('MyPicBG.png')] bg-no-repeat bg-center bg-contain"></div>
-
-        <ul class="flex justify-between font-medium text-3xl">
+        <ul class="flex justify-between font-semibold text-3xl inter inter mr-5">
             <li class="navbaranimation">RESUME</li>
-            <li class="navbaranimation">SKILLS</li>
+            <li class="navbaranimation"><a href="#skills">SKILLS</a></li>
             <li class="navbaranimation">PROJECTS</li>
             <li class="navbaranimation">CONTACT</li>
         </ul>
 
-        <div class="textanimation font-bold text-[300px] mt-55 flex justify-center items-center whitespace-nowrap text-white mix-blend-difference">
-            YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-
+        <div
+            class="z-20 relative textanimation font-bold text-[300px] mt-55 flex justify-center items-center whitespace-nowrap text-white mix-blend-difference">
+            YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH
+            KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-YASH KIKANI-
         </div>
 
         <div class="flex opacityanimation">
-            <ul class="text-3xl p-4 mt-30 font-light">
-                <li class="p-2 footeranimation">LinkedIn</li>
-                <li class="p-2 footeranimation">Github</li>
-                <li class="p-2 footeranimation">Instagram</li>
+            <ul class="text-3xl p-4 mt-10 font-light">
+                <li class="p-2 footeranimation">
+                    <a href="https://www.linkedin.com/in/yash-kikani" target="_blank"
+                        rel="noopener noreferrer">LinkedIn</a>
+                </li>
+                <li class="p-2 footeranimation">
+                    <a href="https://www.github.com/Yash-Kikani-24" target="_blank" rel="noopener noreferrer">Github</a>
+                </li>
+                <li class="p-2 footeranimation">
+                    <a href="https://www.instagram.com/kikaniiyash/" target="_blank"
+                        rel="noopener noreferrer">Instagram</a>
+                </li>
             </ul>
-            <div class="text-8xl font-semibold mt-15 ml-290">
+            <div class="text-8xl font-semibold text-white mix-blend-difference ml-240">
                 <div>//Full Stack</div>
                 <div>&nbsp;&nbsp;Developer</div>
             </div>
         </div>
     </div>
 
-    <!-- <div class="bg-[#121010] h-screen w-screen">
+    <!-- PAGE2 -->
+    <div class="bg-[#121010] h-screen w-screen text-white absolute z-20">
+        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Intro</div>
 
-    </div> -->
+        <div class="text-[4.17vw] font-semibold text-right leading-[1.2] mt-17 mr-20 p-0">
+            <div>
+                I’m a full-stack
+                <span class="text-[#EB4F3B]">developer who turns</span>
+            </div>
+            <div>
+                <span class="text-[#EB4F3B]">ideas into real, scalable products.</span>
+                I focus
+            </div>
+            <div>on clean architecture, intuitive user</div>
+            <div>experiences, and practical solutions.</div>
+        </div>
+        <div class="flex justify-end mr-25 mt-7 leading-[1.3]">
+            <div class="text-[1.56vw] font-thin w-[36.61vw]">
+                Bringing your vision to life quickly and effectively--weather its
+                branding, apps or websites--I’ve got it covered, delivering smooth and
+                effective solutions from start to finish.
+            </div>
+        </div>
+
+        <button
+            class="border border-white text-white px-10 py-4 rounded-full text-[1.2vw] ml-254 mt-7 font-thin hover:bg-[#EB4F3B] hover:text-black transition-all duration-300">
+            See My Work
+        </button>
+    </div>
+
+    <!-- PAGE3 -->
+    <div class="bg-[#121010] h-screen w-screen text-white flex px-[6vw] py-[5vh]">
+        <div class="w-[50%] pr-[4vw] mt-40">
+            <div class="text-[9.375vw] leading-[0.95] font-semibold tracking-tight">
+                <div>My</div>
+                <div class="text-[#EB4F3B]">Education</div>
+            </div>
+
+            <div class="w-full mt-3">
+                <div class="flex justify-between items-end mb-5">
+                    <div class="text-[1.56vw]">MIT-World Peace University</div>
+                    <div class="text-[1.30vw] font-medium">(2022-2023)</div>
+                </div>
+                <div class="text-[1.4vw] font-light text-gray-300 leading-[1.1]">
+                    Completed my first year in Computer Engineering at MIT-Pune, where I
+                    built a strong foundation in programming, mathematics, and core
+                    computer science concepts. Maintained a CGPA of
+                    <span class="text-[#EB4F3B] font-medium">8.56/10</span>
+                    while actively exploring web development and modern software
+                    technologies.
+                </div>
+                <div class="text-[1.56vw] tracking-wide text-left mt-10">
+                    BTECH CE
+                </div>
+            </div>
+        </div>
+
+        <div class="w-[50%] pl-[4vw] mt-16">
+            <div class="w-full h-[40vh] mb-8">
+                <img class="w-full h-full object-cover" src="./MPSTME.avif" alt="MPSTME Building" />
+            </div>
+
+            <div class="w-full">
+                <div class="flex justify-between items-end mb-4">
+                    <div class="text-[1.56vw]">NMIMS - MPSTME University</div>
+                    <div class="text-[1.30vw] font-medium">(2023-Present)</div>
+                </div>
+                <div class="text-[1.4vw] font-light text-gray-300 leading-[1.1]">
+                    Currently pursuing an integrated MBA Tech in Computer Engineering at
+                    NMIMS-Mumbai. Focused on building scalable full-stack applications,
+                    understanding system design, and combining technical development
+                    with business thinking. Maintaining a CGPA of
+                    <span class="text-[#EB4F3B] font-medium">3.38/4</span>
+                    while working on real-world projects and strengthening
+                    problem-solving skills.
+                </div>
+                <div class="text-[1.56vw] tracking-wide text-right mt-4">
+                    MBA TECH CE
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE4 -->
+    <div id="skills" class="bg-[#E0E0E0] h-screen w-screen text-black">
+        <div class="p-7 ml-3 text-[2.08vw] font-semibold">// Core Skills</div>
+        <div class="mt-35">
+            <div class="whitespace-nowrap -translate-x-170">
+                <button
+                    class="border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Full Stack Development
+                </button>
+                <button
+                    class="border shadow-lg border-black px-28 py-6 mx-10 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Data Science And Algorithm
+                </button>
+                <button
+                    class="border shadow-lg border-black px-40 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Full Stack Development
+                </button>
+            </div>
+            <div class="whitespace-nowrap mt-6 translate-x-15">
+                <button
+                    class="border shadow-lg border-black px-15 py-6 rounded-full text-[2.60vw] font-extrabold hover:bg-black hover:text-white transition-all duration-300">
+                    ->
+                </button>
+                <button
+                    class="border shadow-lg border-black px-40 py-6 mx-10 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Backend System Design
+                </button>
+                <button
+                    class="border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Database Management
+                </button>
+            </div>
+            <div class="whitespace-nowrap mt-6 -translate-x-25">
+                <button
+                    class="border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Data Handling & Analytics
+                </button>
+                <button
+                    class="border shadow-lg border-black px-15 py-6 mx-10 rounded-full text-[2.60vw] font-extrabold hover:bg-black hover:text-white transition-all duration-300">
+                    <- </button>
+                        <button
+                            class="border shadow-lg border-black px-25 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                            Data Science And Algorithm
+                        </button>
+            </div>
+            <div class="whitespace-nowrap mt-6 -translate-x-25">
+                <button
+                    class="border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Collaboration
+                </button>
+                <button
+                    class="border shadow-lg border-black px-30 py-6 mx-10 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Data Science And Algorithm
+                </button>
+                <button
+                    class="border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold hover:bg-black hover:text-white transition-all duration-300">
+                    Animations
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE5 -->
+    <div class="bg-[#121010] h-screen w-screen text-white">
+        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Services</div>
+
+        <div class="flex items-start">
+
+            <div class="text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] -mt-35">01</div>
+
+            <div class="mt-15 ml-20 w-[60%]">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Web Technologies</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2]">Bringing your vision to life quickly and
+                    effectively--weather its<br>branding, apps or websites--I’ve got it covered, delivering smooth
+                    and<br>effective solutions from start to finish. </div>
+                <div class="text-[2.60vw]  mt-20">
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">ReactJS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">01</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">EmbeddedJS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">02</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">JQuery</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">03</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Ajax</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">04</div>
+                    </div>
+                    <hr class="border-t border-white">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE6 -->
+    <div class="bg-[#121010] h-screen w-screen text-white">
+        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Services</div>
+
+        <div class="flex items-start">
+
+            <div class="text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] -mt-35">02</div>
+
+            <div class="mt-15 ml-20 w-[60%]">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Languages</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2]">Bringing your vision to life quickly and
+                    effectively--weather its<br>branding, apps or websites--I’ve got it covered, delivering smooth
+                    and<br>effective solutions from start to finish. </div>
+                <div class="text-[2.60vw]  mt-20">
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">C/C++</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">01</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Python</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">02</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">Java</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">03</div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="flex justify-between">
+                        <div class="font-semibold">JavaScript</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] ">04</div>
+                    </div>
+                    <hr class="border-t border-white">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE7 -->
+    <div class="bg-[#121010] h-screen w-screen text-white">
+        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Projects</div>
+
+
+        <div class="flex gap-8">
+            <div class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353]">
+                <img class="w-full h-full object-cover rounded-2xl" src="./Waitless2.webp" alt="waitless" />
+            </div>
+
+            <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
+                <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2025)</div>
+                <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">WaitLess</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">Bringing your vision to life quickly
+                    and<br>effectively--weather its branding, apps or<br>websites--I’ve got it covered,
+                    delivering<br>smooth and effective solutions from start<br>to finish. </div>
+                <div class="mt-30">
+                    <div class="font-thin text-[1.56vw] py-1">NodeJS</div>
+                    <div class="font-thin text-[1.56vw] py-1">ExpressJS</div>
+                    <div class="font-thin text-[1.56vw] py-1">MongoDB</div>
+                    <div class="font-thin text-[1.56vw] py-1">Socket.io</div>
+                    <div class="font-thin text-[1.56vw] py-1">Redis</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE8 -->
+    <div class="bg-[#121010] h-screen w-screen text-white">
+        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Projects</div>
+
+
+        <div class="flex gap-8">
+            <div class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353]">
+                <img class="w-full h-full object-cover rounded-2xl" src="./ProdDash.png" alt="proddash" />
+            </div>
+
+            <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
+                <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2023)</div>
+                <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">ProdDash</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">Bringing your vision to life quickly
+                    and<br>effectively--weather its branding, apps or<br>websites--I’ve got it covered,
+                    delivering<br>smooth and effective solutions from start<br>to finish. </div>
+                <div class="mt-30">
+                    <div class="font-thin text-[1.56vw] py-1">ReactJS</div>
+                    <div class="font-thin text-[1.56vw] py-1">Firebase</div>
+                    <div class="font-thin text-[1.56vw] py-1">Redux ToolKit</div>
+                    <div class="font-thin text-[1.56vw] py-1">Context API</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE9 -->
+    <div class="bg-[#E0E0E0] h-screen w-screen overflow-hidden relative">
+        <div class="absolute inset-0 bg-[url('MyPicBG.png')] bg-no-repeat bg-center bg-contain pointer-events-none">
+        </div>
+
+        <div
+            class="reachoutanim font-bold text-[300px] mt-55 flex justify-center items-center whitespace-nowrap text-white mix-blend-difference">
+            REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-
+        </div>
+
+        <div>
+            <div class="ml-6 mt-18">
+                <div class="text-[1.56vw]"><b>Mail:</b> yashkikani2455@gmail.com</div>
+                <div class="text-[1.56vw]"><b>Contact:</b> 9925260339</div>
+            </div>
+            <div>
+                <ul class="ml-6 text-3xl font-light flex gap-20 mt-20">
+                    <li class="">
+                        <a href="https://www.linkedin.com/in/yash-kikani" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.github.com/Yash-Kikani-24" target="_blank"
+                            rel="noopener noreferrer">Github</a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.instagram.com/kikaniiyash/" target="_blank"
+                            rel="noopener noreferrer">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
 <script src="./script.js"></script>
 
 </html>
