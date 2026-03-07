@@ -1,4 +1,4 @@
-body{
+body {
   font-family: "Inter", sans-serif;
 }
 
@@ -6,42 +6,43 @@ body{
   font-family: "Fira Code", monospace;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 .hover-btn::before {
-    content: '';
-    position: absolute;
-    background: #EB4F3B;
-    width: 300%;
-    height: 300%;
-    border-radius: 50%;
-    top: var(--y, 50%);
-    left: var(--x, 50%);
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s ease-out;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: #eb4f3b;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease-out;
+  z-index: -1;
 }
 
 .hover-btn:hover::before {
-    transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .skill-btn::before {
-    content: '';
-    position: absolute;
-    background: #000000;
-    width: 300%;
-    height: 300%;
-    border-radius: 50%;
-    top: var(--y, 50%);
-    left: var(--x, 50%);
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.6s ease-out;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  background: #000000;
+  width: 300%;
+  height: 300%;
+  border-radius: 50%;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.6s ease-out;
+  z-index: -1;
 }
 
 .skill-btn:hover::before {
-    transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
 }
+

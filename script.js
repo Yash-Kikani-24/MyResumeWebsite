@@ -95,98 +95,144 @@ gsap.from(".page2text2", {
   color: "#000000",
 });
 
+const btn = document.querySelector(".hover-btn");
 
-const btn = document.querySelector('.hover-btn');
-
-btn.addEventListener('mouseenter', function(e) {
-    const rect = this.getBoundingClientRect();
-    this.style.setProperty('--x', (e.clientX - rect.left) + 'px');
-    this.style.setProperty('--y', (e.clientY - rect.top) + 'px');
+btn.addEventListener("mouseenter", function (e) {
+  const rect = this.getBoundingClientRect();
+  this.style.setProperty("--x", e.clientX - rect.left + "px");
+  this.style.setProperty("--y", e.clientY - rect.top + "px");
 });
 
-btn.addEventListener('mouseleave', function(e) {
-    const rect = this.getBoundingClientRect();
-    this.style.setProperty('--x', (e.clientX - rect.left) + 'px');
-    this.style.setProperty('--y', (e.clientY - rect.top) + 'px');
+btn.addEventListener("mouseleave", function (e) {
+  const rect = this.getBoundingClientRect();
+  this.style.setProperty("--x", e.clientX - rect.left + "px");
+  this.style.setProperty("--y", e.clientY - rect.top + "px");
 });
 
 gsap.from(".edu-left", {
-    scrollTrigger: { trigger: ".edu-left", start: "top 150%", scrub:1 },
-    x: -200, 
-    opacity: 0, 
-    duration: 1, 
-    ease: "power2.out"
+  scrollTrigger: { trigger: ".edu-left", start: "top 150%", scrub: 1 },
+  x: -200,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
 });
 
 gsap.from(".edu-right", {
-    scrollTrigger: { trigger: ".edu-right", start: "top 150%", scrub:1 },
-    x: 200, 
-    opacity: 0, 
-    duration: 1, 
-    ease: "power2.out"
+  scrollTrigger: { trigger: ".edu-right", start: "top 150%", scrub: 1 },
+  x: 200,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out",
 });
 
 const skillRows = document.querySelectorAll("#skills .whitespace-nowrap");
 
 // Lines 1 & 3: Move Right to Left
 gsap.from([skillRows[1], skillRows[3]], {
-    xPercent: -50, // Moves them left as you scroll down
-    scrollTrigger: {
-        trigger: "#skills",
-        start: "top bottom", 
-        end: "bottom top",
-        scrub: 1
-    }
+  xPercent: -50, // Moves them left as you scroll down
+  scrollTrigger: {
+    trigger: "#skills",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 1,
+  },
 });
 
 // Lines 2 & 4: Move Left to Right
 gsap.from([skillRows[0], skillRows[2]], {
-    xPercent: 50, // Moves them right as you scroll down
-    scrollTrigger: {
-        trigger: "#skills",
-        start: "top bottom",
-        end: "bottom top",
-        scrub: 1
-    }
+  xPercent: 50, // Moves them right as you scroll down
+  scrollTrigger: {
+    trigger: "#skills",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 1,
+  },
 });
 
-const skillBtns = document.querySelectorAll('.skill-btn');
+const skillBtns = document.querySelectorAll(".skill-btn");
 
-skillBtns.forEach(btn => {
-    btn.addEventListener('mouseenter', function(e) {
-        const rect = this.getBoundingClientRect();
-        this.style.setProperty('--x', (e.clientX - rect.left) + 'px');
-        this.style.setProperty('--y', (e.clientY - rect.top) + 'px');
-    });
+skillBtns.forEach((btn) => {
+  btn.addEventListener("mouseenter", function (e) {
+    const rect = this.getBoundingClientRect();
+    this.style.setProperty("--x", e.clientX - rect.left + "px");
+    this.style.setProperty("--y", e.clientY - rect.top + "px");
+  });
 
-    btn.addEventListener('mouseleave', function(e) {
-        const rect = this.getBoundingClientRect();
-        this.style.setProperty('--x', (e.clientX - rect.left) + 'px');
-        this.style.setProperty('--y', (e.clientY - rect.top) + 'px');
-    });
+  btn.addEventListener("mouseleave", function (e) {
+    const rect = this.getBoundingClientRect();
+    this.style.setProperty("--x", e.clientX - rect.left + "px");
+    this.style.setProperty("--y", e.clientY - rect.top + "px");
+  });
 });
-
 
 gsap.set([".num-1", ".num-2"], { transformPerspective: 800 });
 
 // Trigger the flip when Content 2 scrolls into view
-ScrollTrigger.create({
-    trigger: ".content-2",
-    start: "top 50%", // Triggers when Section 2 is halfway up the screen
-    onEnter: () => flipNumbers(true),
-    onLeaveBack: () => flipNumbers(false)
-});
+// Set up 3D perspective for the flip
+gsap.set(".num-stack div", { transformPerspective: 800 });
 
-// The animation logic
-function flipNumbers(isForward) {
-    gsap.to(".num-1", { 
-        rotationX: isForward ? -90 : 0, 
-        opacity: isForward ? 0 : 1, 
-        duration: 0.5 
-    });
-    gsap.to(".num-2", { 
-        rotationX: isForward ? 0 : 90, 
-        opacity: isForward ? 1 : 0, 
-        duration: 0.5 
+// Loop through sections 2 to 6 to create the triggers
+for (let i = 2; i <= 6; i++) {
+    ScrollTrigger.create({
+        trigger: `.content-${i}`,
+        start: "top 50%", 
+        onEnter: () => {
+            gsap.to(`.num-${i-1}`, { rotationX: -90, opacity: 0, duration: 0.5 });
+            gsap.to(`.num-${i}`, { rotationX: 0, opacity: 1, duration: 0.5 });
+        },
+        onLeaveBack: () => {
+            gsap.to(`.num-${i}`, { rotationX: 90, opacity: 0, duration: 0.5 });
+            gsap.to(`.num-${i-1}`, { rotationX: 0, opacity: 1, duration: 0.5 });
+        }
     });
 }
+
+const cursorLogo = document.querySelector("#cursor-logo");
+const techItems = document.querySelectorAll(".tech-item");
+
+// GSAP quickTo makes mouse tracking extremely smooth
+let xTo = gsap.quickTo(cursorLogo, "x", { duration: 0.2, ease: "power3" });
+let yTo = gsap.quickTo(cursorLogo, "y", { duration: 0.2, ease: "power3" });
+
+techItems.forEach((item) => {
+  // Show image and change source on enter
+  item.addEventListener("mouseenter", () => {
+    cursorLogo.src = item.getAttribute("data-img");
+    gsap.to(cursorLogo, { opacity: 1, scale: 1, duration: 0.3 });
+  });
+
+  // Hide image on leave
+  item.addEventListener("mouseleave", () => {
+    gsap.to(cursorLogo, { opacity: 0, scale: 0, duration: 0.3 });
+  });
+
+  // Move image with mouse
+  item.addEventListener("mousemove", (e) => {
+    xTo(e.clientX - 48); // -48 centers the 96px width image on your mouse
+    yTo(e.clientY - 48);
+  });
+});
+
+// Shrink Project 1 when Project 2 arrives
+gsap.to(".project-1", {
+    scale: 0.85, opacity: 0.2,
+    scrollTrigger: {
+        trigger: ".project-2",
+        start: "top bottom",
+        end: "top top",
+        scrub: true
+    }
+});
+
+// Shrink Project 2 when Project 3 arrives
+gsap.to(".project-2", {
+    scale: 0.85, opacity: 0.2,
+    scrollTrigger: {
+        trigger: ".project-3",
+        start: "top bottom",
+        end: "top top",
+        scrub: true
+    }
+});
+
+

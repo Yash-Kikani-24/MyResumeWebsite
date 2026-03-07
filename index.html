@@ -12,6 +12,8 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
 </head>
+<img id="cursor-logo" class="fixed top-0 left-0 w-24 h-24 object-contain pointer-events-none z-[99] opacity-0 scale-0"
+    src="" alt="Tech Logo">
 
 <body class="overflow-x-hidden">
     <!-- PAGE1 -->
@@ -24,9 +26,9 @@
 
         <ul class="flex justify-between font-semibold text-3xl inter inter mr-5">
             <li class="navbaranimation">RESUME</li>
-            <li class="navbaranimation"><a href="#skills">SKILLS</a></li>
-            <li class="navbaranimation">PROJECTS</li>
-            <li class="navbaranimation">CONTACT</li>
+            <li class="navbaranimation"><a href="#edu">EDUCATION</a></li>
+            <li class="navbaranimation"><a href="#allskills">SKILLS</a></li>
+            <li class="navbaranimation"><a href="#projects">PROJECTS</a></li>
         </ul>
 
         <div
@@ -36,7 +38,7 @@
         </div>
 
         <div class="flex opacityanimation">
-            <ul class="text-3xl p-4 mt-10 font-light">
+            <ul class="text-3xl p-4 mt-30 font-light">
                 <li class="p-2 footeranimation">
                     <a href="https://www.linkedin.com/in/yash-kikani" target="_blank"
                         rel="noopener noreferrer">LinkedIn</a>
@@ -49,7 +51,7 @@
                         rel="noopener noreferrer">Instagram</a>
                 </li>
             </ul>
-            <div class="text-8xl font-semibold text-white mix-blend-difference ml-240">
+            <div class="text-8xl font-semibold ml-280 mt-15">
                 <div>//Full Stack</div>
                 <div>&nbsp;&nbsp;Developer</div>
             </div>
@@ -84,13 +86,13 @@
         </div>
 
         <button
-            class="hover-btn relative overflow-hidden z-10 border border-white text-white px-10 py-4 rounded-full text-[1.2vw] ml-254 mt-7 font-thin transition-colors duration-300 hover:text-black hover:font-medium">
+            class="hover-btn relative overflow-hidden z-10 border border-white text-white px-10 py-4 rounded-full text-[1.2vw] ml-280 mt-7 font-thin transition-colors duration-300 hover:text-black hover:font-medium">
             <span class="relative z-10 pointer-events-none">See My Work</span>
         </button>
     </div>
 
     <!-- PAGE3 -->
-    <div class="bg-[#121010] h-screen w-screen text-white flex px-[6vw] py-[5vh]">
+    <div id="edu" class="bg-[#121010] h-screen w-screen text-white flex px-[6vw] py-[5vh]">
         <div class="edu-left w-[50%] pr-[4vw] mt-40">
             <div class="text-[9.375vw] leading-[0.95] font-semibold tracking-tight">
                 <div>My</div>
@@ -100,7 +102,7 @@
             <div class="w-full mt-3">
                 <div class="flex justify-between items-end mb-5">
                     <div class="text-[1.56vw]">MIT-World Peace University</div>
-                    <div class="text-[1.30vw] font-medium">(2022-2023)</div>
+                    <div class="text-[1.30vw] font-medium">(2023-2024)</div>
                 </div>
                 <div class="text-[1.4vw] font-light text-gray-300 leading-[1.1]">
                     Completed my first year in Computer Engineering at MIT-Pune, where I
@@ -124,7 +126,7 @@
             <div class="w-full">
                 <div class="flex justify-between items-end mb-4">
                     <div class="text-[1.56vw]">NMIMS - MPSTME University</div>
-                    <div class="text-[1.30vw] font-medium">(2023-Present)</div>
+                    <div class="text-[1.30vw] font-medium">(2024-Present)</div>
                 </div>
                 <div class="text-[1.4vw] font-light text-gray-300 leading-[1.1]">
                     Currently pursuing an integrated MBA Tech in Computer Engineering at
@@ -144,233 +146,500 @@
 
     <!-- PAGE4 -->
     <div id="skills" class="bg-[#E0E0E0] h-screen w-screen text-black">
-    <div class="p-7 ml-3 text-[2.08vw] font-semibold">// Core Skills</div>
-    <div class="mt-35">
-        
-        <div class="whitespace-nowrap -translate-x-170">
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Full Stack Development</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Full Stack Development</span>
-            </button>
-        </div>
+        <div class="p-7 ml-3 text-[2.08vw] font-semibold">// Core Skills</div>
+        <div class="mt-35">
 
-        <div class="whitespace-nowrap mt-6 translate-x-15">
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Backend System Design</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 mx-10 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">-></span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Database Management</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Backend System Design</span>
-            </button>
-        </div>
+            <div class="whitespace-nowrap -translate-x-170">
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Full Stack Development</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Full Stack Development</span>
+                </button>
+            </div>
 
-        <div class="whitespace-nowrap mt-6 -translate-x-130">
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none"><-</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-25 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Data Handling & Analytics</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 mx-10 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none"><-</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-25 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
-            </button>
-        </div>
+            <div class="whitespace-nowrap mt-6 translate-x-15">
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Backend System Design</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 mx-10 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">-></span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-28 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Database Management</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-40 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Backend System Design</span>
+                </button>
+            </div>
 
-        <div class="whitespace-nowrap mt-6">
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Animations</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Collaboration</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
-            </button>
-            <button class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
-                <span class="relative z-10 pointer-events-none">Animations</span>
-            </button>
-        </div>
+            <div class="whitespace-nowrap mt-6 -translate-x-130">
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">&lt;-</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-25 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Backend as a Service</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Data Handling & Analytics</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-15 py-6 mx-10 rounded-full text-[2.60vw] font-extrabold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">&lt;-</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-25 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Data Science And Algorithm</span>
+                </button>
+            </div>
 
+            <div class="whitespace-nowrap mt-6">
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Animations</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Collaboration</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 mx-10 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Mobile App Development</span>
+                </button>
+                <button
+                    class="skill-btn relative overflow-hidden z-10 border shadow-lg border-black px-30 py-6 rounded-full text-[2.60vw] font-semibold transition-colors duration-300 hover:text-white">
+                    <span class="relative z-10 pointer-events-none">Animations</span>
+                </button>
+            </div>
+
+        </div>
     </div>
-</div>
 
     <!-- PAGE 5&6 -->
-    <div class="bg-[#121010] text-white flex relative w-screen">
-        
-        <div class="w-[40%] h-screen sticky top-0 pt-7 pl-7 overflow-hidden">
+    <div id="allskills" class="bg-[#121010] text-white flex relative w-screen">
+
+        <div class="w-[40%] h-screen sticky top-0 pt-7 pl-7 overflow-hidden z-20">
             <div class="text-[#EB4F3B] text-[2.08vw] font-semibold">// Services</div>
-            <div class="relative w-full h-full mt-20 ml-10 perspective-1000">
-                <div class="num-1 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none">01</div>
-                <div class="num-2 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0" style="transform: rotateX(90deg);">02</div>
+            <div class="num-stack relative w-full h-full mt-20 ml-10 perspective-1000">
+                <div
+                    class="num-1 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none">
+                    01</div>
+                <div class="num-2 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0"
+                    style="transform: rotateX(90deg);">02</div>
+                <div class="num-3 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0"
+                    style="transform: rotateX(90deg);">03</div>
+                <div class="num-4 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0"
+                    style="transform: rotateX(90deg);">04</div>
+                <div class="num-5 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0"
+                    style="transform: rotateX(90deg);">05</div>
+                <!-- <div class="num-6 absolute text-[26.04vw] fira text-transparent [-webkit-text-stroke:1px_white] leading-none opacity-0"
+                    style="transform: rotateX(90deg);">06</div> -->
             </div>
         </div>
 
         <div class="w-[60%] pb-[10vh]">
-            
-            <div class="content-1 min-h-screen flex flex-col justify-center pr-20 pt-20">
-                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Web Technologies</div>
-                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
-                    Bringing your vision to life quickly and effectively--weather its<br>branding, apps or websites--I’ve got it covered, delivering smooth and<br>effective solutions from start to finish.
-                </div>
-                <div class="text-[2.60vw] mt-20">
-                    <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">ReactJS</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">01</div>
-                    </div>
-                    <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">EmbeddedJS</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">02</div>
-                    </div>
-                    <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">JQuery</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">03</div>
-                    </div>
-                    <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">Ajax</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">04</div>
-                    </div>
-                    <hr class="border-t border-white">
-                </div>
-            </div>
 
-            <div class="content-2 min-h-screen flex flex-col justify-center pr-20">
+            <div class="content-1 min-h-screen flex flex-col justify-center pr-20">
                 <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Languages</div>
                 <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
-                    Bringing your vision to life quickly and effectively--weather its<br>branding, apps or websites--I’ve got it covered, delivering smooth and<br>effective solutions from start to finish.
+                    Building strong foundations with versatile programming languages.<br>I leverage these tools to write
+                    efficient algorithms, handle complex<br>data, and develop scalable backend systems and applications.
                 </div>
                 <div class="text-[2.60vw] mt-20">
                     <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">C/C++</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">01</div>
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg">
+                        <div class="font-semibold pointer-events-none">C/C++</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
                     </div>
                     <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">Python</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">02</div>
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg">
+                        <div class="font-semibold pointer-events-none">Python</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
                     </div>
                     <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">Java</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">03</div>
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+                        <div class="font-semibold pointer-events-none">Java</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
                     </div>
                     <hr class="border-t border-white">
-                    <div class="flex justify-between py-2">
-                        <div class="font-semibold">JavaScript</div>
-                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white]">04</div>
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                        <div class="font-semibold pointer-events-none">JavaScript</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
                     </div>
                     <hr class="border-t border-white">
                 </div>
             </div>
 
-        </div>
-    </div>
+            <div class="content-2 min-h-screen flex flex-col justify-center pr-20 pt-20">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Web Technologies</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                    Crafting modern, interactive web experiences from scratch.<br>I focus on robust frontend
+                    architecture, smooth state<br>management, and bringing creative designs to life in the browser.
+                </div>
+                <div class="text-[2.60vw] mt-20">
 
-    <!-- PAGE7 -->
-    <div class="bg-[#121010] h-screen w-screen text-white">
-        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Projects</div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                        <div class="font-semibold pointer-events-none">HTML</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                        <div class="font-semibold pointer-events-none">CSS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+                        <div class="font-semibold pointer-events-none">ReactJS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                        <div class="font-semibold pointer-events-none">EmbeddedJS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg">
+                        <div class="font-semibold pointer-events-none">JQuery</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">05
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                        <div class="font-semibold pointer-events-none">Ajax</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">06
+                        </div>
+                    </div>
 
 
-        <div class="flex gap-8">
-            <div class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353]">
-                <img class="w-full h-full object-cover rounded-2xl" src="./Waitless2.webp" alt="waitless" />
-            </div>
-
-            <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
-                <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2025)</div>
-                <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">WaitLess</div>
-                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">Bringing your vision to life quickly
-                    and<br>effectively--weather its branding, apps or<br>websites--I’ve got it covered,
-                    delivering<br>smooth and effective solutions from start<br>to finish. </div>
-                <div class="mt-30">
-                    <div class="font-thin text-[1.56vw] py-1">NodeJS</div>
-                    <div class="font-thin text-[1.56vw] py-1">ExpressJS</div>
-                    <div class="font-thin text-[1.56vw] py-1">MongoDB</div>
-                    <div class="font-thin text-[1.56vw] py-1">Socket.io</div>
-                    <div class="font-thin text-[1.56vw] py-1">Redis</div>
+                    <hr class="border-t border-white">
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- PAGE8 -->
-    <div class="bg-[#121010] h-screen w-screen text-white">
-        <div class="text-[#EB4F3B] p-7 text-[2.08vw] font-semibold">// Projects</div>
-
-
-        <div class="flex gap-8">
-            <div class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353]">
-                <img class="w-full h-full object-cover rounded-2xl" src="./ProdDash.png" alt="proddash" />
-            </div>
-
-            <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
-                <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2023)</div>
-                <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">ProdDash</div>
-                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">Bringing your vision to life quickly
-                    and<br>effectively--weather its branding, apps or<br>websites--I’ve got it covered,
-                    delivering<br>smooth and effective solutions from start<br>to finish. </div>
-                <div class="mt-30">
-                    <div class="font-thin text-[1.56vw] py-1">ReactJS</div>
-                    <div class="font-thin text-[1.56vw] py-1">Firebase</div>
-                    <div class="font-thin text-[1.56vw] py-1">Redux ToolKit</div>
-                    <div class="font-thin text-[1.56vw] py-1">Context API</div>
+            <div class="content-3 min-h-screen flex flex-col justify-center pr-20 pt-20">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Backend & Databases</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                    Architecting secure, scalable backend solutions and<br>managing data flows. I build robust APIs and
+                    databases<br>to ensure your applications run seamlessly behind the scenes.
+                </div>
+                <div class="text-[2.60vw] mt-20">
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
+                        <div class="font-semibold pointer-events-none">Node.js</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
+                        <div class="font-semibold pointer-events-none">Express.js</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg">
+                        <div class="font-semibold pointer-events-none">Firebase</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg">
+                        <div class="font-semibold pointer-events-none">MongoDB</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
+                        <div class="font-semibold pointer-events-none">MySQL</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">05
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
                 </div>
             </div>
+
+            <div class="content-4 min-h-screen flex flex-col justify-center pr-20 pt-20">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">UI & Styling / Animations</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                    Crafting pixel-perfect, highly responsive interfaces.<br>I use modern CSS frameworks and animation
+                    libraries to<br>deliver engaging, fluid, and memorable user experiences.
+                </div>
+                <div class="text-[2.60vw] mt-20">
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg">
+                        <div class="font-semibold pointer-events-none">Tailwind CSS</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg">
+                        <div class="font-semibold pointer-events-none">Bootstrap</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.worldvectorlogo.com/logos/gsap-greensock.svg">
+                        <div class="font-semibold pointer-events-none">GSAP</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.worldvectorlogo.com/logos/framer-motion.svg">
+                        <div class="font-semibold pointer-events-none">Framer Motion</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                </div>
+            </div>
+
+            <div class="content-5 min-h-screen flex flex-col justify-center pr-20 pt-20">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Data Analytics</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                    Extracting meaningful insights from raw data using the Statistical Analysis System.<br>I utilize
+                    powerful Python libraries and SAS suites to process, analyze,<br>and visualize complex datasets for
+                    informed decision-making.
+                </div>
+                <div class="text-[2.60vw] mt-20">
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg">
+                        <div class="font-semibold pointer-events-none">NumPy</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg">
+                        <div class="font-semibold pointer-events-none">Pandas</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg">
+                        <div class="font-semibold pointer-events-none">Matplotlib</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://www.vectorlogo.zone/logos/sas/sas-icon.svg">
+                        <div class="font-semibold pointer-events-none">SAS (Software)</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                </div>
+            </div>
+
+            <!-- <div class="content-6 min-h-screen flex flex-col justify-center pr-20 pt-20">
+                <div class="text-[#EB4F3B] text-[4.16vw] font-semibold">Others</div>
+                <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                    Leveraging modern deployment and real-time tools.<br>From hosting static sites to enabling live
+                    communication,<br>I ensure fast, reliable, and interactive web applications.
+                </div>
+                <div class="text-[2.60vw] mt-20">
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg">
+                        <div class="font-semibold pointer-events-none">Vercel</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">01
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg">
+                        <div class="font-semibold pointer-events-none">Netlify</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">02
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg">
+                        <div class="font-semibold pointer-events-none">Socket.io</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">03
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                    <div class="tech-item flex justify-between py-2 cursor-pointer hover:bg-white/5 transition-colors"
+                        data-img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg">
+                        <div class="font-semibold pointer-events-none">Redis</div>
+                        <div class="fira text-transparent [-webkit-text-stroke:0.3px_white] pointer-events-none">04
+                        </div>
+                    </div>
+                    <hr class="border-t border-white">
+                </div>
+            </div> -->
+
         </div>
     </div>
 
-    <!-- PAGE9 -->
-    <div class="bg-[#E0E0E0] h-screen w-screen overflow-hidden relative">
-        <div class="absolute inset-0 bg-[url('MyPicBG.png')] bg-no-repeat bg-center bg-contain pointer-events-none">
+    <!-- PAGE7&8 -->
+    <div id="projects" class="relative w-screen bg-[#121010]">
+
+        <div class="sticky top-0 z-50 w-full pt-7 pl-7 pointer-events-none">
+            <div class="text-[#EB4F3B] text-[2.08vw] font-semibold">// Projects</div>
+        </div>
+
+        <div class="project-1 h-screen w-screen text-white sticky top-0 z-10 pt-24">
+            <div class="flex gap-8">
+                <div
+                    class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353] flex items-center justify-center p-4">
+                    <img class="w-full h-full object-cover rounded-2xl" src="./Waitless2.webp" alt="Waitless">
+                </div>
+
+                <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
+                    <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2025)</div>
+                    <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">WaitLess</div>
+                    <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                        Engineered a production-level Node.js and Express.js backend with modular REST APIs for complex
+                        queue workflows. Designed scalable MongoDB schemas and secured the system using JWT-based access
+                        and refresh token rotation. Architected horizontal scalability via Socket.io and Redis pub/sub
+                        for seamless real-time synchronization.
+                    </div>
+                    <div class="mt-10">
+                        <div class="font-thin text-[1.56vw] py-1">NodeJS</div>
+                        <div class="font-thin text-[1.56vw] py-1">ExpressJS</div>
+                        <div class="font-thin text-[1.56vw] py-1">MongoDB</div>
+                        <div class="font-thin text-[1.56vw] py-1">Socket.io</div>
+                        <div class="font-thin text-[1.56vw] py-1">Redis</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div
-            class="reachoutanim font-bold text-[300px] mt-55 flex justify-center items-center whitespace-nowrap text-white mix-blend-difference">
-            REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-
+            class="project-2 bg-[#121010] h-screen w-screen text-white relative z-20 shadow-[0_-30px_60px_rgba(0,0,0,0.9)] pt-24">
+            <div class="flex gap-8">
+                <div
+                    class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353] flex items-center justify-center p-4">
+                    <img class="w-full h-full object-cover rounded-2xl" src="./ProdDash.png" alt="ProdDash">
+                </div>
+
+                <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
+                    <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2024)</div>
+                    <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">ProdDash</div>
+                    <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                        Built a multi-page dashboard with authentication-protected routes using React Router and
+                        Firebase Auth. Optimized global state management for products and cart using Redux Toolkit with
+                        real-time Firestore sync. Designed role-based access control and modular UI components via React
+                        Context API, ensuring UI/UX consistency and standardized architecture for performance.
+                    </div>
+                    <div class="mt-10">
+                        <div class="font-thin text-[1.56vw] py-1">ReactJS</div>
+                        <div class="font-thin text-[1.56vw] py-1">Firebase</div>
+                        <div class="font-thin text-[1.56vw] py-1">Redux ToolKit</div>
+                        <div class="font-thin text-[1.56vw] py-1">Context API</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div>
-            <div class="ml-6 mt-18">
-                <div class="text-[1.56vw]"><b>Mail:</b> yashkikani2455@gmail.com</div>
-                <div class="text-[1.56vw]"><b>Contact:</b> 9925260339</div>
-            </div>
-            <div>
-                <ul class="ml-6 text-3xl font-light flex gap-20 mt-20">
-                    <li class="">
-                        <a href="https://www.linkedin.com/in/yash-kikani" target="_blank"
-                            rel="noopener noreferrer">LinkedIn</a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.github.com/Yash-Kikani-24" target="_blank"
-                            rel="noopener noreferrer">Github</a>
-                    </li>
-                    <li class="">
-                        <a href="https://www.instagram.com/kikaniiyash/" target="_blank"
-                            rel="noopener noreferrer">Instagram</a>
-                    </li>
-                </ul>
+        <div
+            class="project-3 bg-[#121010] h-screen w-screen text-white relative z-30 shadow-[0_-30px_60px_rgba(0,0,0,0.9)] pt-24">
+            <div class="flex gap-8">
+                <div
+                    class="ml-8 w-[57.08vw] h-[48.02vw] rounded-2xl border border-[#5C5353] flex items-center justify-center p-4">
+                    <img class="w-full h-full object-cover rounded-2xl" src="./Moneywise.jpg" alt="MoneyWise">
+                </div>
+
+                <div class="w-[36.66vw] h-[48.02vw] rounded-2xl border border-[#5C5353] px-15 py-7">
+                    <div class="text-[1.56vw] fira text-transparent [-webkit-text-stroke:0.3px_white]">(2023)</div>
+                    <div class="font-semibold text-[3.64vw] text-[#EB4F3B] pt-5">MoneyWise</div>
+                    <div class="font-thin text-[1.56vw] leading-[1.2] mt-4">
+                        Web-based application to track income, expenses, and savings. Developed a secure system for
+                        transaction management and database integration using MySQL, while focusing on clean UI/UX
+                        principles to visualize financial data effectively.
+                    </div>
+                    <div class="mt-10">
+                        <div class="font-thin text-[1.56vw] py-1">MySQL</div>
+                        <div class="font-thin text-[1.56vw] py-1">User Auth</div>
+                        <div class="font-thin text-[1.56vw] py-1">Transaction Management</div>
+                    </div>
+                </div>
             </div>
         </div>
+
+    </div>
+
+    <!-- PAGE9 -->
+    <div class="relative h-screen w-screen bg-transparent z-0"></div>
+
+    <div class="fixed bottom-0 left-0 w-screen h-screen -z-10">
+
+        <div class="bg-[#E0E0E0] h-screen w-screen overflow-hidden relative">
+            <div class="absolute inset-0 bg-[url('MyPicBG.png')] bg-no-repeat bg-center bg-contain pointer-events-none">
+            </div>
+
+            <div
+                class="reachoutanim font-bold text-[300px] mt-55 flex justify-center items-center whitespace-nowrap text-white mix-blend-difference">
+                REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-REACH OUT-
+            </div>
+
+            <div>
+                <div class="ml-6 mt-40">
+                    <div class="text-[1.56vw]"><b>Mail:</b> yashkikani2455@gmail.com</div>
+                    <div class="text-[1.56vw]"><b>Contact:</b> 9925260339</div>
+                </div>
+                <div>
+                    <ul class="ml-6 text-3xl font-light flex gap-20 mt-20">
+                        <li>
+                            <a href="https://www.linkedin.com/in/yash-kikani" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://www.github.com/Yash-Kikani-24" target="_blank"
+                                rel="noopener noreferrer">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kikaniiyash/" target="_blank"
+                                rel="noopener noreferrer">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
