@@ -73,16 +73,15 @@ gsap.to(".reachoutanim", {
 
 const myText = new SplitType(".page2text", { types: "words" });
 
-// 2. Animate the words using GSAP
 gsap.from(myText.words, {
   scrollTrigger: {
     trigger: ".page2text",
-    start: "top 90%", // Starts when the top of the text enters near the bottom of the screen
-    end: "bottom 50%", // Finishes when the bottom of the text hits the middle of the screen
-    scrub: 1, // Ties it to scroll. '1' adds a smooth 1-second catch-up delay. Use 'true' for instant locking.
+    start: "top 90%", 
+    end: "bottom 50%", 
+    scrub: 1, 
   },
   color: "#000000",
-  stagger: 0.1, // Creates the wave effect across the words during the scroll
+  stagger: 0.1,
 });
 
 gsap.from(".page2text2", {
@@ -90,7 +89,7 @@ gsap.from(".page2text2", {
     trigger: ".page2text2",
     start: "top 90%",
     end: "bottom 60%",
-    scrub: 1, // Keeps it tied to your scroll wheel like the heading
+    scrub: 1, 
   },
   color: "#000000",
 });
@@ -127,9 +126,9 @@ gsap.from(".edu-right", {
 
 const skillRows = document.querySelectorAll("#skills .whitespace-nowrap");
 
-// Lines 1 & 3: Move Right to Left
+
 gsap.from([skillRows[1], skillRows[3]], {
-  xPercent: -50, // Moves them left as you scroll down
+  xPercent: -50, 
   scrollTrigger: {
     trigger: "#skills",
     start: "top bottom",
@@ -138,9 +137,8 @@ gsap.from([skillRows[1], skillRows[3]], {
   },
 });
 
-// Lines 2 & 4: Move Left to Right
 gsap.from([skillRows[0], skillRows[2]], {
-  xPercent: 50, // Moves them right as you scroll down
+  xPercent: 50,
   scrollTrigger: {
     trigger: "#skills",
     start: "top bottom",
@@ -167,11 +165,8 @@ skillBtns.forEach((btn) => {
 
 gsap.set([".num-1", ".num-2"], { transformPerspective: 800 });
 
-// Trigger the flip when Content 2 scrolls into view
-// Set up 3D perspective for the flip
 gsap.set(".num-stack div", { transformPerspective: 800 });
 
-// Loop through sections 2 to 6 to create the triggers
 for (let i = 2; i <= 6; i++) {
     ScrollTrigger.create({
         trigger: `.content-${i}`,
@@ -190,30 +185,29 @@ for (let i = 2; i <= 6; i++) {
 const cursorLogo = document.querySelector("#cursor-logo");
 const techItems = document.querySelectorAll(".tech-item");
 
-// GSAP quickTo makes mouse tracking extremely smooth
 let xTo = gsap.quickTo(cursorLogo, "x", { duration: 0.2, ease: "power3" });
 let yTo = gsap.quickTo(cursorLogo, "y", { duration: 0.2, ease: "power3" });
 
 techItems.forEach((item) => {
-  // Show image and change source on enter
+  
   item.addEventListener("mouseenter", () => {
     cursorLogo.src = item.getAttribute("data-img");
     gsap.to(cursorLogo, { opacity: 1, scale: 1, duration: 0.3 });
   });
 
-  // Hide image on leave
+
   item.addEventListener("mouseleave", () => {
     gsap.to(cursorLogo, { opacity: 0, scale: 0, duration: 0.3 });
   });
 
-  // Move image with mouse
+
   item.addEventListener("mousemove", (e) => {
-    xTo(e.clientX - 48); // -48 centers the 96px width image on your mouse
+    xTo(e.clientX - 48); 
     yTo(e.clientY - 48);
   });
 });
 
-// Shrink Project 1 when Project 2 arrives
+
 gsap.to(".project-1", {
     scale: 0.85, opacity: 0.2,
     scrollTrigger: {
@@ -224,7 +218,7 @@ gsap.to(".project-1", {
     }
 });
 
-// Shrink Project 2 when Project 3 arrives
+
 gsap.to(".project-2", {
     scale: 0.85, opacity: 0.2,
     scrollTrigger: {
